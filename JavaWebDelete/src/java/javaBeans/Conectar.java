@@ -54,16 +54,6 @@ ps.executeUpdate(); // Executa o comando SQL dentro do servidor
                     + "PRIMARY KEY ( pkuser ) ) ";
             ps = con.prepareStatement(sql);
             ps.executeUpdate(); // Executa o comando SQL dentro do servidor 
-
-            sql = " create table if not exists professores ("
-                    + "pkprof int AUTO_INCREMENT,"
-                    + "nome varchar(40) not null,"
-                    + "cpf varchar(12) not null,"
-                    + "fk_user int not null, "
-                    + "PRIMARY KEY ( pkprof ) )";
-            ps = con.prepareStatement(sql);
-            ps.executeUpdate(); // Executa o comando SQL dentro do servidor 
-
                
 statusSQL = null; // Coloca null nas operações bem sucedidas
 
